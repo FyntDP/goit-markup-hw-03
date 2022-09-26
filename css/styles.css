@@ -1,0 +1,275 @@
+/* цвет основного текста #757575 */
+/* цвет заголовков на темном фоне + logo  #FFFFFF */
+/* цвет большинства заголовков #212121 */
+/* ховер + Web + bgr кнопок  */
+
+:root {
+    --primary-text-color:#757575 ;
+    --title: #212121;
+    --accent-color:#2196F3;
+    --contrast-color: #FFFFFF;
+}
+body {
+    background-color: var(--contrast-color);
+    color: var(--primary-text-color);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+/* utilitis */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid tomato;
+}
+
+
+/* Лолотип */
+.logo {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+.header-logo {
+    color: #000000;
+    text-decoration: none;
+}
+/* навигация */
+.main-nav{
+    display: flex;
+    align-items: center;
+}
+.site_nav{
+    display: flex;
+    margin-left: 93px;
+}
+.nav-item+ .nav-item{
+    margin-left: 50px;
+}
+.cont{
+    margin-left: auto;
+}
+
+.site_nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--title);
+    text-decoration: none;
+}
+.site_nav .link.current {
+    color: var(--accent-color);
+}
+.link-contact {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+.site_nav .link:hover,
+.site_nav .link:focus,
+.link-contact:hover,
+.link-contact:focus {
+    color: var(--accent-color);
+}
+
+/* секции заголовки */
+.section{
+    margin-top: 94px;
+}
+.section_title{
+    margin-bottom: 10px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    color: var(--title);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+.section_title_class {
+    margin-bottom: 50px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    color: var(--title);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.section-team{
+    margin-top: 94px;
+
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    background-color: #F5F4FA;
+    color: var(--title);
+}
+.our_teams_title{
+    color: var(--title);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+.section-team .text {
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--primary-text-color);
+}
+/* Hero */
+.hero{
+    background-color: #2F303A;
+}
+.hero_title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background-color: #2F303A;
+    color: #ffffff;
+}
+
+/* button */
+.button{
+    color: var(--contrast-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+}    
+/* feature-list */
+.feature-list{
+    display: flex;
+    justify-content: center;
+}
+
+/* image */
+.image{
+    display: inline-block;
+}
+.image+ .image{
+    margin-left: 30px;
+}
+.team-bottom{
+    margin-bottom: 94px;
+}
+/* footer */
+.footer{
+    background-color: #2F303A;
+}
+.footer-logo{
+    color: var(--contrast-color);
+}
+.footer-address{
+    color: var(--contrast-color);
+    font-size: 14px;
+    line-height: 1.71;
+}
+.footer-address > a{
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+.footer-address>a:hover,
+.footer-address>a:focus {
+    color: var(--accent-color);
+}
+
+
+
+
+
+
+/* Portfolio */
+.portfolio .portfolio-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title);
+}
+.portfolio > p{
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--primary-text-color);
+}
+.portfolio-button{
+    color: var(--title);
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+}
+.portfolio-button:hover,
+.portfolio-button:focus {
+    background-color: var(--accent-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
