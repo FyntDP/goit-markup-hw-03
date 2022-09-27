@@ -33,7 +33,7 @@ ul{
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
 }
 
 
@@ -71,7 +71,6 @@ ul{
     padding-top: 32px;
     padding-bottom: 32px;
     
-    font-family: 'Roboto';
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -107,7 +106,6 @@ ul{
 .section_title{
     margin-bottom: 10px;
 
-    font-family: 'Roboto';
     font-style: normal;
     color: var(--title);
     text-decoration: none;
@@ -119,7 +117,6 @@ ul{
 .section_title_class {
     margin-bottom: 50px;
 
-    font-family: 'Roboto';
     font-style: normal;
     color: var(--title);
     font-weight: 700;
@@ -129,8 +126,8 @@ ul{
 }
 
 .section-team{
-    margin-top: 94px;
-
+    margin-top: 81px;
+    margin-bottom: 94px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -151,8 +148,11 @@ ul{
 /* Hero */
 .hero{
     background-color: #2F303A;
+    height: 600px;
 }
+
 .hero_title{
+    
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -165,6 +165,14 @@ ul{
 
 /* button */
 .button{
+    display: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 32px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
     color: var(--contrast-color);
     background-color: var(--accent-color);
     cursor: pointer;
@@ -172,6 +180,7 @@ ul{
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
+    
 }    
 /* feature-list */
 .feature-list{
@@ -180,6 +189,9 @@ ul{
 }
 
 /* image */
+.images{
+    display: flex;
+}
 .image{
     display: inline-block;
 }
@@ -187,8 +199,10 @@ ul{
     margin-left: 30px;
 }
 .team-bottom{
+    display: flex;
     margin-bottom: 94px;
 }
+
 /* footer */
 .footer{
     background-color: #2F303A;
@@ -228,6 +242,9 @@ ul{
     line-height: 1.88;
     color: var(--primary-text-color);
 }
+.portfolio-button+.portfolio-button{
+    margin-left: 8px;
+}
 .portfolio-button{
     color: var(--title);
     cursor: pointer;
@@ -241,6 +258,10 @@ ul{
     background-color: var(--accent-color);
 }
 
+.filter{
+    display: flex;
+    justify-content: center;
+}
 
 
 
