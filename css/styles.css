@@ -35,7 +35,9 @@ ul{
     padding-right: 15px;
     /* outline: 2px solid tomato; */
 }
-
+.our{
+    padding-top: 94px;
+}
 
 /* Лолотип */
 .logo {
@@ -114,6 +116,9 @@ ul{
     line-height: 1.14;
     text-transform: uppercase;
 }
+.features+ .features{
+    margin-left: 30px;
+}
 .section_title_class {
     margin-bottom: 50px;
 
@@ -127,7 +132,7 @@ ul{
 
 .section-team{
     margin-top: 81px;
-    margin-bottom: 94px;
+    margin-bottom: 13px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -135,23 +140,39 @@ ul{
     color: var(--title);
 }
 .our_teams_title{
+    margin-top: 30px;
+    margin-bottom: 10px;
+
     color: var(--title);
     font-weight: 500;
+
     font-size: 16px;
     line-height: 1.19;
 }
 .section-team .text {
+    padding-bottom: 30px;
+
     font-size: 16px;
     line-height: 1.19;
     color: var(--primary-text-color);
 }
+/* .status{
+    margin-bottom: 30px;
+} */
 /* Hero */
 .hero{
     background-color: #2F303A;
     height: 600px;
 }
-
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    }
 .hero_title{
+    width: 696px;
     
     font-weight: 900;
     font-size: 44px;
@@ -165,7 +186,7 @@ ul{
 
 /* button */
 .button{
-    display: inherit;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     padding: 10px 32px;
@@ -192,23 +213,32 @@ ul{
 .images{
     display: flex;
 }
-.image{
-    display: inline-block;
+.no-gap{
+    display: block;
 }
 .image+ .image{
     margin-left: 30px;
 }
+.image{
+    text-align: center;
+}
 .team-bottom{
     display: flex;
-    margin-bottom: 94px;
+    padding-bottom: 94px;
 }
 
 /* footer */
 .footer{
+    height: 252px;
     background-color: #2F303A;
 }
 .footer-logo{
     color: var(--contrast-color);
+}
+.foot{
+    display: inline-block;
+    margin-top: 60px;
+    margin-bottom: 20px;
 }
 .footer-address{
     color: var(--contrast-color);
@@ -216,9 +246,13 @@ ul{
     line-height: 1.71;
 }
 .footer-address > a{
+    padding-top: 9px;
+    padding-bottom: 60px;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
 }
+
+
 .footer-address>a:hover,
 .footer-address>a:focus {
     color: var(--accent-color);
