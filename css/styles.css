@@ -36,7 +36,7 @@ ul{
     /* outline: 2px solid tomato; */
 }
 .our{
-    padding-top: 94px;
+    padding: 94px 0;
 }
 
 /* Лолотип */
@@ -120,12 +120,12 @@ ul{
     text-transform: uppercase;
 }
 
-/* .features{
+.features{
     width: calc((100% - 3 * 30px) / 4);
-} */
-.features+ .features{
-    margin-left: 30px;
 }
+/* .features+ .features{
+    margin-left: 30px;
+} */
 .section_title_class {
     margin-bottom: 50px;
 
@@ -138,16 +138,20 @@ ul{
 }
 
 .section-team{
-    margin-top: 81px;
-    margin-bottom: 13px;
+    margin-top: 94px;
+
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     background-color: #F5F4FA;
     color: var(--title);
 }
+.team-text{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 .our_teams_title{
-    margin-top: 30px;
+    
     margin-bottom: 10px;
 
     color: var(--title);
@@ -157,8 +161,7 @@ ul{
     line-height: 1.19;
 }
 .section-team .text {
-    padding-bottom: 30px;
-
+    
     font-size: 16px;
     line-height: 1.19;
     color: var(--primary-text-color);
@@ -180,6 +183,7 @@ ul{
     }
 .hero_title{
     width: 696px;
+    margin-bottom: 30px;
     
     font-weight: 900;
     font-size: 44px;
@@ -214,6 +218,7 @@ ul{
 .feature-list{
     display: flex;
     justify-content: center;
+    
 }
 
 /* image */
@@ -229,10 +234,14 @@ ul{
 .image{
     background-color: var(--contrast-color);
     text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+                0px 1px 1px rgba(0, 0, 0, 0.14),
+                0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 .team-bottom{
     display: flex;
-    padding-bottom: 94px;
+    
 }
 
 /* footer */
@@ -244,8 +253,11 @@ ul{
     color: var(--contrast-color);
 }
 .foot{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.fo{
     display: inline-block;
-    margin-top: 60px;
     margin-bottom: 20px;
 }
 .footer-address{
@@ -254,8 +266,8 @@ ul{
     line-height: 1.71;
 }
 .footer-address > a{
-    padding-top: 9px;
-    padding-bottom: 60px;
+    display: inline-block;
+    margin-top: 9px;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
 }
@@ -272,6 +284,9 @@ ul{
 
 
 /* Portfolio */
+.portfolio{
+    display: block;
+}
 .portfolio .portfolio-title {
     font-weight: 700;
     font-size: 18px;
@@ -291,6 +306,7 @@ ul{
 }
 .portfolio-button{
     padding: 6px 22px;
+    border: none;
     border-radius: 4px;
     
     color: var(--title);
@@ -300,6 +316,12 @@ ul{
     line-height: 1.63;
     text-align: center;
 }
+.curent{
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+                0px 1px 2px rgba(0, 0, 0, 0.08), 
+                0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 .portfolio-button.curent,
 .portfolio-button:hover,
 .portfolio-button:focus {
@@ -330,7 +352,7 @@ ul{
     margin-bottom: 30px;
 }
 .text-decoration{
-    margin: 20px 24px;
+    padding: 20px 24px;
 }    
 .text-decoration>p { 
 
