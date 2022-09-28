@@ -217,7 +217,7 @@ ul{
 /* feature-list */
 .feature-list{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     
 }
 
