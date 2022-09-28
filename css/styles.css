@@ -299,7 +299,9 @@ ul{
     line-height: 1.88;
     color: var(--primary-text-color);
 }
-
+.portfolio  img{
+    display: block;
+}
 .portfolio-section{
     padding-top: 96px;
     padding-bottom: 94px;
@@ -343,7 +345,7 @@ ul{
 }
 
 .card-item {
-    border: 1px solid #EEEEEE;
+    
     /* background-color: tomato; */
     width: calc((100% - 2 * 30px) / 3);
 }
@@ -353,6 +355,7 @@ ul{
 }
 .text-decoration{
     padding: 20px 24px;
+    border: 1px solid #EEEEEE;
 }    
 .text-decoration>p { 
 
