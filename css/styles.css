@@ -15,6 +15,13 @@ body {
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
 }
+/* body{
+background-image: url(/images/night\ sky.jpg);
+background-repeat: no-repeat;
+background-position: auto;
+background-size: cover;
+background-attachment: fixed;
+} */
 a{
     text-decoration: none;
 }
@@ -34,6 +41,7 @@ ul{
     padding-left: 15px;
     padding-right: 15px;
     /* outline: 2px solid tomato; */
+    
 }
 .our{
     padding: 94px 0;
@@ -96,6 +104,16 @@ ul{
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
     text-decoration: none;
+}
+.contact-icon::before{
+    display:inline-flex;
+    align-items: center;
+    
+    content: "";
+    width: 16px;
+    height: 12px;
+    margin-left: 10px;
+    border: 1px solid black;
 }
 .site_nav .link:hover,
 .site_nav .link:focus,
@@ -171,8 +189,22 @@ ul{
 } */
 /* Hero */
 .hero{
-    background-color: #2F303A;
+    width: 1600px;
     height: 600px;
+
+    background-color: #C4C4C4;          
+    outline: 1px solid black;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)),
+        url(/images/hero\ \(1\).jpg);
+                
+    
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
 }
 .main{
     display: flex;
@@ -191,7 +223,7 @@ ul{
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    background-color: #2F303A;
+    /* background-color: #2F303A; */
     color: #ffffff;
 }
 
@@ -372,7 +404,19 @@ ul{
 }
 
 
+.box::before {
+    margin: 100%;
+    content: 'Это текст в ::before';
+    font-size: 40px;
+    color: orange;
+}
 
+.box::after {
+    margin: 100%;
+    content: 'Это текст в ::after';
+    font-size: 30px;
+    color: teal;
+}
 
 
 
