@@ -91,10 +91,15 @@ ul{
     color: var(--title);
     text-decoration: none;
 }
+
 .site_nav .link.current {
     color: var(--accent-color);
 }
+
 .link-contact {
+    display: inline-flex;
+    align-items: center;
+
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -105,16 +110,26 @@ ul{
     color: var(--primary-text-color);
     text-decoration: none;
 }
-.contact-icon::before{
-    display:inline-flex;
-    align-items: center;
-    
+
+.link-contact::before{
     content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
     width: 16px;
-    height: 12px;
-    margin-left: 10px;
-    border: 1px solid black;
+    height: 16px;
+    margin-right: 10px;
+    
 }
+.icon-mail::before{
+    background-image: url(/images/mail.svg);
+}
+.icon-tel::before{
+    background-image: url(/images/smartphone.svg);
+}
+
+
+
 .site_nav .link:hover,
 .site_nav .link:focus,
 .link-contact:hover,
@@ -141,12 +156,39 @@ ul{
 .features{
     width: calc((100% - 3 * 30px) / 4);
 }
-/* .features+ .features{
-    margin-left: 30px;
-} */
+
+.features::before{
+    display: block;
+    content: "";
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: #F5F4FA;
+    /* border: 1px solid tomato; */
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.features:nth-child(1)::before{
+    background-image: url(/images/antenna\ 1.svg);
+}
+
+.features:nth-child(2)::before {
+    background-image: url(/images/clock\ 1.svg);
+}
+
+.features:nth-child(3)::before {
+    background-image: url(/images/diagram\ 1.svg);
+}
+
+.features:nth-child(4)::before {
+    background-image: url(/images/astronaut\ 1.svg);
+}
+
 .section_title_class {
     margin-bottom: 50px;
-
     font-style: normal;
     color: var(--title);
     font-weight: 700;
